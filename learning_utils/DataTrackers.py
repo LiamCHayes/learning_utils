@@ -71,7 +71,7 @@ class TrainingLoopTracker:
         dictionary = {self.names[i]: self.metrics[i] for i in range(self.num_metrics)}
         return pd.DataFrame(dictionary)
 
-    def save_metrics(self, path: str, index: bool = True) -> None:
+    def save(self, path: str, index: bool = True) -> None:
         """
         Saves your metrics to a csv file in path.
 
